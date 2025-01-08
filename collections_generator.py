@@ -13,7 +13,7 @@ str = 'Yellow Yaks like yelling and yawning and yesturday they yodled while eati
 lst = [word for word in str.split() if word[0].lower() == 'y']
 
 # 5. Для каждого элемента строки  "hi, 3.44, 535  " сгенерировать коллекцию кортежей вида (индекс, значение), (индекс, значение)
-str =  "hi, 3.44, 535  "
+str = "hi, 3.44, 535  "
 lst_of_tuples = [(i, x) for i, x in enumerate(str)]
 
 # 6. Сгенерировать коллекцию с числами из строки "In 1984 there were 13 instances of a protest with over 1000 people attending"
@@ -29,4 +29,3 @@ lst_small_words = [x for x in str.split() if len(x) < 4]
 
 # 9. Найти простые числа из промежутка [1, 50]. Простым числом называется число, которое делится только на единицу и на себя же
 lst_prime_nums = [x for x in range(2, 51) if all(x % i != 0 for i in range(2, x))]
-
